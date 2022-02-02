@@ -1,0 +1,19 @@
+﻿@model List<Degree>
+
+
+<table>
+    <tr>
+        <th>Index Number</th>
+        <th>Averge grade</th>
+        <th>Number of subjects </th>
+    </tr>
+    @foreach (var x in Model)
+    {
+<tr>
+    <td>@x.Index</td>
+    <td>@x.Grade</td>
+    <td>@x.Subject</td>
+</tr>
+    }
+
+</table>
