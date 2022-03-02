@@ -21,8 +21,9 @@ namespace _13316_egzamin_z_asp.net.Models
         }
         public IActionResult Add(Degree degree)
         {
-
+            degree.AvregeGrade.Add(degree.Grade);
             StudentGrades.Add(index, degree);
+            
             index++;
             return View("Index", StudentGrades.Values.ToList());
         }

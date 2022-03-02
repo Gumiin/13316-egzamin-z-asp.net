@@ -12,9 +12,11 @@ namespace _13316_egzamin_z_asp.net.Models
         public int Index { get; set; }
         [Required]
         public double Grade { get; set; }
+        public List<double> AvregeGrade { get; set; }
 
         public string Subject { get; set; }
 
+        
 
     }
 }
